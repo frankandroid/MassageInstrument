@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/background"
+                android:padding="@dimen/normal_padding"
+                tools:context="com.frank.massageinstrument.activity.AcuPointActivity">
+
+    <com.frank.massageinstrument.view.HeaderView
+        android:id="@+id/headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/btn_search"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@+id/headerview"-->
+        <!--android:background="@mipmap/btn_search"-->
+        <!--android:layout_marginTop="@dimen/normal_margin"/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/et_search"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:paddingLeft="@dimen/normal_padding"-->
+        <!--android:layout_height="92px"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginTop="@dimen/normal_margin"-->
+        <!--android:layout_toLeftOf="@+id/btn_search"-->
+        <!--android:layout_marginRight="@dimen/normal_margin"-->
+        <!--android:background="@drawable/search_edittext"-->
+        <!--android:layout_below="@+id/headerview"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:hint="请输入症状查询"-->
+        <!--android:textColorHint="@color/text_white"-->
+        <!--android:textColor="@color/text_white"-->
+        <!--android:textCursorDrawable="@null"-->
+        <!--android:textSize="@dimen/search_edit_text_size"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="10px"
+        android:paddingBottom="@dimen/normal_margin"
+        android:paddingLeft="120px"
+        android:paddingRight="120px"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/headerview"
+        android:background="@drawable/background_content"
+        />
+
+</RelativeLayout>

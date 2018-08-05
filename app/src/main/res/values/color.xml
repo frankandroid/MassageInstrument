@@ -150,4 +150,19 @@
     <color name="darkblue">#00008b</color> <!-- 暗蓝色 -->
     <color name="navy">#000080</color> <!-- 海军色 -->
     <color name="black">#000000</color> <!-- 黑色 -->
+
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_red">#F13450</color>
+    <color name="transparent_white_30">#4CFFFFFF</color>
+    <color name="transparent_white_70">#B4FFFFFF</color>
+    <color name="transparent_black_70">#B4000000</color>
+    <color name="normal_border">#4CEAE6C9</color>
+
+    <color name="color1">#0F3CB4</color>
+    <color name="color2">#0F7896</color>
+    <color name="color3">#C83C14</color>
+    <color name="color4">#96003C</color>
+    <color name="color5">#4623A0</color>
+    <color name="color6">#148C14</color>
+    <color name="color7">#0C3CC8</color>
 </resources>

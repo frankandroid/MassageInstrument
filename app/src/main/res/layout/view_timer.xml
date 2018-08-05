@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25px"
+    android:paddingRight="25px"
+    android:paddingLeft="25px"
+    >
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tv_year"
+        android:includeFontPadding="false"
+        android:text="22"
+        android:textSize="100px"/>
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tv_hour"
+        android:includeFontPadding="false"
+        android:text="2018/07"
+        android:textSize="50px"/>
+
+    <TextView
+        android:id="@+id/tv_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:text="08:32:02"
+        android:textSize="40px"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_time"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

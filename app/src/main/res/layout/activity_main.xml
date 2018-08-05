@@ -1,38 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/linearLayout1"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:layout_alignParentLeft="true"
-              android:layout_alignParentTop="true"
-              android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.frank.massageinstrument.activity.MainActivity">
 
-    <Button
-        android:id="@+id/ButtonSetup"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="配置串口" />
-
-    <Button
-        android:id="@+id/ButtonConsole"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="发送数据" />
-
-    <Button
-        android:id="@+id/ButtonSending"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="批量发送" />
-
-    <Button
-        android:id="@+id/ButtonQuit"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="退出" />
-
-</LinearLayout>
+    <GridView
+        android:id="@+id/gv_item"
+        android:layout_width="1480px"
+        android:layout_height="814px"
+        android:layout_centerInParent="true"
+        android:horizontalSpacing="20px"
+        android:numColumns="3"
+        android:verticalSpacing="20px"/>
+    <!--android:layout_width="1480px"-->
+    <!--android:layout_height="814px"-->
+</RelativeLayout>

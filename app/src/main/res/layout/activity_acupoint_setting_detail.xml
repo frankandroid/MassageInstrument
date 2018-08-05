@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/background"
+                android:padding="@dimen/normal_padding"
+                tools:context="com.frank.massageinstrument.activity.AcuPointSettingDetailActivity">
+
+    <com.frank.massageinstrument.view.HeaderView
+        android:id="@+id/headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:paddingTop="80px"
+        android:paddingBottom="@dimen/normal_padding"
+        android:orientation="horizontal"
+        android:layout_below="@+id/headerview">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="80px"
+            android:paddingRight="80px"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:id="@+id/tv_title"/>
+            <com.frank.massageinstrument.view.MySeekbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:id="@+id/sb_frequency"/>
+            <com.frank.massageinstrument.view.MySeekbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sb_frequency"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:id="@+id/sb_strength"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="42px"
+                android:textColor="@color/text_white"
+                android:layout_below="@+id/sb_strength"
+                android:text="组合模式:"
+                android:id="@+id/tv_mode"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mode"
+                android:id="@+id/rg_mode"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42px"
+                    android:textColor="@color/text_white"
+                    android:id="@+id/rd_mode1"
+                    android:text="模式1"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42px"
+                    android:textColor="@color/text_white"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:id="@+id/rd_mode2"
+                    android:text="模式2"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="42px"
+                    android:textColor="@color/text_white"
+                    android:id="@+id/rd_mode3"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:text="模式3"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_mode"
+                android:id="@+id/ll_start_time"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="42px"
+                    android:text="开始： "
+                    android:textColor="@color/text_white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="42px"
+                    android:textColor="@color/text_red"
+                    android:id="@+id/tv_start_time"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_start_time"
+                android:id="@+id/ll_end_time"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="42px"
+                    android:text="结束： "
+                    android:textColor="@color/text_white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textSize="42px"
+                    android:textColor="@color/text_red"
+                    android:id="@+id/tv_end_time" />
+            </LinearLayout>
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:layout_below="@+id/ll_end_time"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:background="@mipmap/btn_save"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/normal_border" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="80px"
+            android:paddingRight="80px"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:id="@+id/tv_explain_title"
+                android:text="穴位解释："/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_below="@+id/tv_explain_title">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48px"
+                    android:textColor="@color/transparent_white_70"
+                    android:id="@+id/tv_explain"
+                    android:includeFontPadding="false" />
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_margin">30px</dimen>
+    <dimen name="normal_padding">30px</dimen>
+    <dimen name="head_text_size">34px</dimen>
+    <dimen name="search_edit_text_size">48px</dimen>
+    <dimen name="rv_item_title_text_size">60px</dimen>
+    <dimen name="rv_item_text_size">48px</dimen>
+    <dimen name="list_item_height">130px</dimen>
+</resources>

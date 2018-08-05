@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.frank.massageinstrument.db.DaoManager;
+
 import java.io.File;
 import java.io.IOException;
 import java.security.InvalidParameterException;
@@ -48,5 +50,14 @@ public class MassageApplication extends Application {
             mSerialPort.close();
             mSerialPort = null;
         }
+    }
+
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        //初始化greenDao数据库
+        DaoManager.getInstance().init(this);
     }
 }

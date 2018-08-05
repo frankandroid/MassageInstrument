@@ -5,4 +5,11 @@
         port.</string>
     <string name="error_unknown">The serial port can not be opened for an unknown
         reason.</string>
+
+    <string name="txt_binzheng">病症</string>
+    <string name="txt_cure">治疗</string>
+    <string name="txt_kaixue">开穴</string>
+    <string name="txt_knowlage">知识</string>
+    <string name="txt_setting">设置</string>
+    <string name="txt_help">帮助</string>
 </resources>

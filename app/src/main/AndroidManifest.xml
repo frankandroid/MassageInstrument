@@ -10,17 +10,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Main2Activity">
         </activity>
         <activity android:name=".ConsoleActivity"/>
         <activity android:name=".SendingActivity"/>
         <activity android:name=".SerialPortPreferencesActivity"/>
-        <activity android:name=".DemoActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".DemoActivity"/>
+        <activity android:name=".activity.AcuPointActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".activity.AcupointListActivity"/>
+        <activity android:name=".activity.AcuPointSettingActivity" />
+        <activity android:name=".activity.AcuPointSettingDetailActivity" />
+        <activity android:name=".activity.AcuPointExplainActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="404px"
+    android:background="@drawable/background_grid_item"
+    android:layout_height="95px"
+    android:paddingLeft="20px">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        android:textSize="42px"
+        android:includeFontPadding="false"
+        android:text="1."
+        android:id="@+id/tv_number"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_number"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
+            android:includeFontPadding="false"
+            android:id="@+id/tv_name"
+            android:textSize="42px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:textColor="@color/text_white"
+            android:includeFontPadding="false"
+            android:text="09 01"
+            android:id="@+id/tv_param"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_setting"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:background="@mipmap/btn_setting"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_switch"
+        android:layout_toLeftOf="@+id/btn_setting"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_switch_off"
+        />
+
+</RelativeLayout>
