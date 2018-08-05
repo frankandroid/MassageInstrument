@@ -25,7 +25,8 @@
         <activity android:name=".DemoActivity"/>
         <activity android:name=".activity.AcuPointActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
-        <activity android:name=".activity.AcupointListActivity"/>
+        <activity android:name=".activity.AcupointListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
         <activity android:name=".activity.AcuPointSettingActivity" />
         <activity android:name=".activity.AcuPointSettingDetailActivity" />
         <activity android:name=".activity.AcuPointExplainActivity" />

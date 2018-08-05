@@ -143,6 +143,7 @@ public class AcuPointSettingDetailActivity extends BaseActivity {
                 mAcupointParamBean.setStartTime(tvStartTime.getText().toString());
                 mAcupointParamBean.setFrequnce(sbFrequency.getValue());
                 mAcupointParamBean.setStrength(sbStrength.getValue());
+                mAcupointParamBean.setStatus(0);
                 if(rdMode1.isChecked()) {
                     mAcupointParamBean.setMode(0);
                 } else if(rdMode2.isChecked()) {

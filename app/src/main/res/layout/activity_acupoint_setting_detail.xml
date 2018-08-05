@@ -72,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="42px"
                     android:textColor="@color/text_white"
+                    android:button="@drawable/background_radio"
                     android:id="@+id/rd_mode1"
                     android:text="模式1"/>
 
@@ -81,6 +82,7 @@
                     android:textSize="42px"
                     android:textColor="@color/text_white"
                     android:layout_marginLeft="@dimen/normal_margin"
+                    android:button="@drawable/background_radio"
                     android:id="@+id/rd_mode2"
                     android:text="模式2"/>
 
@@ -89,7 +91,9 @@
                     android:layout_height="wrap_content"
                     android:textSize="42px"
                     android:textColor="@color/text_white"
+                    android:drawablePadding="15px"
                     android:id="@+id/rd_mode3"
+                    android:button="@drawable/background_radio"
                     android:layout_marginLeft="@dimen/normal_margin"
                     android:text="模式3"/>
             </RadioGroup>
